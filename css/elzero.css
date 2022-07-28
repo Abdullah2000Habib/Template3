@@ -87,6 +87,7 @@ ul {
     position: relative;
     z-index: 1;
     transition: var(--main-transition);
+    text-transform: uppercase;
 
 
 }
@@ -907,6 +908,61 @@ ul {
 
 
 /* End Testimonials */
+
+/* Start Team */
+
+.team {
+
+    padding-top: var(--main-padding-bottom);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-color: white;
+}
+
+.team .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+
+}
+
+.team .box {
+    position: relative;
+
+}
+
+.team .box::before {
+    content: "";
+    background-color: #f3f3f3;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    z-index: -2;
+    width: calc(100% - 60px);
+
+
+}
+
+.team .box .data {}
+
+.team .box .data img {
+    width: 100%;
+}
+
+.team .box .data .social {}
+
+.team .box .info {}
+
+.team .box .info h3 {}
+
+.team .box .info p {}
+
+
+
+
+/* End Team */
 /* Start Animation */
 
 @keyframes up-and-down {
