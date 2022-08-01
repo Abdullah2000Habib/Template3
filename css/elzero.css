@@ -2030,8 +2030,7 @@ ul {
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-
-
+    padding-bottom: 50px;
 
 
 }
@@ -2175,6 +2174,12 @@ ul {
 
 }
 
+@media (max-width: 767px) {
+    .footer {
+        text-align: center;
+    }
+}
+
 .footer .container {
 
 
@@ -2184,7 +2189,7 @@ ul {
 
 }
 
-.footer .box {}
+
 
 .footer .box h3 {
 
@@ -2193,10 +2198,17 @@ ul {
     margin: 0 0 20px;
 
 
+
 }
 
 .footer .box .social {
     display: flex;
+}
+
+@media (max-width: 767px) {
+    .footer .box .social {
+        justify-content: center;
+    }
 }
 
 .footer .box .social li {
@@ -2220,6 +2232,144 @@ ul {
 
 }
 
+.footer .box .social .facebook:hover {
+
+    background-color: #1877f2;
+
+}
+
+.footer .box .social .twitter:hover {
+
+    background-color: #1da1f2;
+
+}
+
+.footer .box .social .youtube:hover {
+
+    background-color: #ff0000;
+
+}
+
+.footer .box .text {
+
+    line-height: 2;
+    color: #B9B9B9;
+    margin: 15px 0;
+
+}
+
+.footer .box .links li {
+
+    padding: 15px 0;
+    transition: var(--main-transition);
+
+
+
+}
+
+.footer .box .links li:not(:last-child) {
+
+    border-bottom: 1px solid #444;
+
+}
+
+.footer .box .links li:hover {
+
+    padding-left: 10px;
+
+}
+
+.footer .box .links li:hover a {
+
+    color: white;
+}
+
+.footer .box .links li a {
+    color: #B9B9B9;
+    transition: var(--main-transition);
+}
+
+.footer .box .links li a::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f101";
+    font-weight: 900;
+    color: var(--main-color);
+    margin-right: 10px;
+}
+
+.footer .box .line {
+    display: flex;
+    align-items: center;
+    color: #B9B9B9;
+    margin-bottom: 30px;
+
+}
+
+@media (max-width: 767px) {
+    .footer .box .line {
+        flex-direction: column;
+    }
+}
+
+.footer .box .line i {
+
+
+    font-size: 25px;
+    color: var(--main-color);
+    margin-right: 10px;
+
+
+}
+
+@media (max-width: 767px) {
+    .footer .box .line i {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+.footer .box .line .info {
+
+    line-height: 1.7;
+    flex: 1;
+
+
+
+}
+
+.footer .box .line .info span {
+
+    display: block;
+
+}
+
+.footer .footer-gallery {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
+    gap: 8px;
+
+}
+
+.footer .footer-gallery img {
+
+    max-width: 100%;
+
+    border: 3px solid white;
+
+
+
+
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    text-align: center;
+    color: white;
+    margin: 50px 0 0;
+    border-top: 1px solid #444;
+}
 
 /* End Footer */
 
