@@ -1322,6 +1322,7 @@ ul {
 
 }
 
+
 .work-steps .info .box {
 
     background-color: #f6f5f5;
@@ -1390,6 +1391,14 @@ ul {
     margin: 0;
     font-size: 22px;
 
+}
+
+
+@media (max-width:767px) {
+    .work-steps .info .box .text {
+        text-align: center;
+
+    }
 }
 
 .work-steps .info .box .text p {
@@ -1727,6 +1736,7 @@ ul {
 
 }
 
+
 .pricing .box .price {
 
     margin-bottom: 20px;
@@ -1795,6 +1805,7 @@ ul {
 
 
 /* End Pricing */
+
 /* Start Video */
 .videos {
 
@@ -1891,6 +1902,126 @@ ul {
 }
 
 /* End Video */
+
+/* Start stats */
+.stats {
+
+    padding-top: var(--main-padding-bottom);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-image: url(../images/stats.jpg);
+    background-size: cover;
+    min-height: 300px;
+
+}
+
+.stats::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 255 255 / 95%);
+}
+
+.stats>h2 {
+
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0 auto 50px;
+    width: fit-content;
+    position: relative;
+
+
+}
+
+.stats .container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+
+
+}
+
+.stats .box {
+
+    background-color: white;
+    padding: 30px 15px;
+    text-align: center;
+    position: relative;
+    opacity: 0.8;
+    transition: var(--main-transition);
+
+
+}
+
+
+
+.stats .box:hover {
+
+    opacity: 1;
+
+}
+
+.stats .box::before,
+.stats .box::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: var(--main-color);
+    transition: 1s;
+    height: 0;
+
+}
+
+.stats .box:hover::before,
+.stats .box:hover::after {
+
+
+    height: 100%;
+}
+
+.stats .box::before {
+
+    top: 0;
+    right: 0;
+
+}
+
+
+
+.stats .box::after {
+    left: 0;
+    bottom: 0;
+}
+
+
+.stats .box .number {
+    display: block;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.stats .box .text {
+
+
+    color: var(--main-color);
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+
+
+
+
+
+/* End stats */
 /* Start Animation */
 
 @keyframes up-and-down {
