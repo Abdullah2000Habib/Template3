@@ -2047,7 +2047,7 @@ ul {
     justify-content: center;
     position: relative;
     z-index: 1;
-
+    animation: change-background 10s linear infinite;
 
 }
 
@@ -2062,6 +2062,13 @@ ul {
     z-index: -1;
 }
 
+@media (max-width:991px) {
+    .discount .image {
+        flex-basis: 100%;
+    }
+
+}
+
 .discount .form {
 
     display: flex;
@@ -2071,9 +2078,60 @@ ul {
 
 }
 
-.discount .form .content h2 {}
+@media (max-width:991px) {
+    .discount .form {
+        flex-basis: 100%;
+    }
 
-.discount .form .content form {}
+}
+
+.discount .form .input {
+
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 15px;
+    caret-color: var(--main-color);
+
+}
+
+.discount .form textarea.input {
+
+    resize: none;
+    height: 200px;
+
+}
+
+.discount .form .input:focus {
+
+    outline: none;
+}
+
+.discount .form [type="submit"] {
+
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: var(--main-transition);
+
+
+
+}
+
+.discount .form [type="submit"]:hover {
+
+    background-color: var(--main-color-alt);
+
+}
 
 
 .discount .content {
@@ -2086,7 +2144,8 @@ ul {
 .discount .content h2 {
     font-size: 40px;
     letter-spacing: -2px;
-
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .discount .content p {
@@ -2105,8 +2164,8 @@ ul {
 
 
 
-
 /* End Discount */
+
 /* Start Animation */
 
 @keyframes up-and-down {
@@ -2206,8 +2265,28 @@ ul {
         width: 200%;
         height: 200%;
     }
+
+
 }
 
+@keyframes change-background {
+
+
+    0%,
+    100% {
+
+        background-image: url(../images/discount-background1.jpg);
+    }
+
+    50% {
+
+        background-image: url(../images/discount-background2.jpg);
+    }
+
+
+
+
+}
 
 
 
